@@ -16,7 +16,7 @@ final class NetworkClientImp: NetworkClient {
     }
 
     func needToUpdate() -> Bool {
-        if Int(Date().timeIntervalSince1970) - lastTimeOfUpdate > 10 {
+        if Int(Date().timeIntervalSince1970) - lastTimeOfUpdate > 3600 {
             return true
         } else {
             return false
